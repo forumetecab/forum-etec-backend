@@ -1,0 +1,4 @@
+.env
+src/migrations
+src/migrations/*
+node_modules
