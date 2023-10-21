@@ -1,0 +1,54 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "commonjs",
+    "lib": [
+      "ESNext"
+    ],
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "rootDir": "./src",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "removeComments": true,
+    "paths": {
+      "@*": [
+        "./src/*"
+      ],
+      "@entity/*": [
+        "./src/entities/*"
+      ],
+      "@controller/*": [
+        "./src/controllers/*"
+      ],
+      "@middleware/*": [
+        "./src/middlewares/*"
+      ],
+      "@helper/*": [
+        "./src/helper/*"
+      ],
+      "@schema/*": [
+        "./src/schemas/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "ts-node": {
+    "require": [
+      "tsconfig-paths/register"
+    ],
+    "files": true
+  }
+}
